@@ -1,0 +1,47 @@
+.circular-progress-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-style: solid;
+    transform: rotate(-135deg); /* Start point of the progress bar */
+    box-sizing: border-box;
+  }
+  
+  .circular-progress-bar-inner,
+  .circular-progress-bar-inner-right,
+  .circular-progress-bar-inner-left {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  
+  .circular-progress-bar-inner {
+    clip-path: inset(0 50% 0 0);
+    transform-origin: center right;
+  }
+  
+  .circular-progress-bar-inner-right {
+    clip-path: inset(0 0 0 50%);
+    transform-origin: center left;
+    border-right: none;
+  }
+  
+  .circular-progress-bar-inner-left {
+    clip-path: inset(0 50% 0 0);
+    transform-origin: center right;
+    border-color: transparent;
+    border-width: inherit;
+    border-style: solid;
+  }
+  
+  .circular-progress-bar-text {
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(135deg); /* Reverse the initial rotation */
+  }
+  

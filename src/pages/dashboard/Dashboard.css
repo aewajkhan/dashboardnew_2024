@@ -1,0 +1,260 @@
+.dashboard {
+  /* width: 100%; */
+  /* width: 1200px; */
+  min-height: 100vh;
+  /* background-color: green; */
+  padding: 10px 20px;
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+  background-color: black;
+}
+.dashboard > h1 {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.topContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* background-color: blue; */
+  width: 100%;
+  /* height: 150px; */
+}
+.DashLeftContainer {
+  flex: 0.6;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+.DashRightContainer {
+  /* background-color: peru; */
+  flex: 0.4;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+}
+
+/* profitCard css  */
+.profitContainer {
+  background-color: var(--primaryColor);
+  display: flex;
+  border-radius: 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 110px;
+}
+
+.profitLeft h5 {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.profitRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+.profitRight > p {
+  font-size: 10px;
+}
+.progressBar {
+  /* background-color: green; */
+  display: flex;
+  position: relative;
+  align-self: center;
+  margin-top: 15px;
+}
+.progressContent {
+  position: absolute;
+  /* background-color: pink; */
+  top: 20px;
+  left: 20px;
+}
+.progressContent > h3 {
+  font-size: 14px;
+  text-align: center;
+}
+.progressContent > h5 {
+  font-size: 10px;
+  text-align: center;
+}
+.progressContent > p {
+  margin-top: -5px;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* middle container  */
+.DashMiddleContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+ 
+}
+
+.dashMiddleLeft {
+  flex: 0.65;
+  overflow-x: hidden;
+  background-color: var(--primaryColor);
+  height: 180px;
+  border-radius: 5px;
+  /* box-sizing: border-box; */
+  /* margin-right: -20px; */
+}
+.dashMiddleRight {
+  flex: 0.4;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 20px;
+  height: 180px;
+  box-sizing: border-box;
+}
+.goalContainer{
+/* background-color: red; */
+}
+
+.goal {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 10px; */
+  margin-bottom: 5px;
+}
+.goalLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.gaolIcon1,
+.gaolIcon2,
+.gaolIcon3 {
+
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gaolIcon1{
+  color: #f36926;
+  background-color: #5f3237;
+}
+.gaolIcon2 {
+  background-color: #293368;
+  color: #6a90f7;
+}
+.gaolIcon3 {
+  background-color: #214a60;
+  color: #229ad0;
+}
+.goalRight {
+  background-color: #46474c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DashBottomeContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  height: auto;
+}
+.dashBottomLeft {
+  flex: 0.6;
+
+}
+.dashBottomRight {
+  flex: 0.4;
+  height: 400px;
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 1080px) {
+  .dashboard {
+    height: auto;
+  }
+  .topContainer {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    flex-wrap: nowrap;
+  }
+  .DashLeftContainer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  .DashLeftContainer {
+    width: 100%;
+  }
+  .profitContainer {
+    height: 150px;
+  }
+  .DashMiddleContainer {
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    flex-wrap: inherit;
+  }
+  .dashMiddleLeft {
+    /* background-color: red; */
+    height: 200px;
+    z-index: 2222;
+  }
+  .DashBottomeContainer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 780px) {
+  .dashboard {
+    padding: 10px;
+    width: 100%;
+  }
+  .DashLeftContainer {
+    /* grid-template-columns: repeat(4,1fr);
+        grid-gap: 10px; */
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+    width: 100%;
+  }
+  .DashRightContainer {
+    width: 100%;
+  }
+  .dashMiddleRight {
+    padding: 10px;
+
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .topContainer {
+    height: auto;
+  }
+
+  .DashLeftContainer {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .DashRightContainer {
+    width: 100%;
+    height: 150px;
+  }
+  .profitContainer {
+    height: 150px;
+  }
+}

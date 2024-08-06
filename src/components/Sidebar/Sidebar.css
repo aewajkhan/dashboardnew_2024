@@ -1,0 +1,36 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* width: 50px; */
+}
+.sidebarLink {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.sidebarLink .Home {
+  color: aliceblue;
+}
+
+.sidebarLink .Home:hover {
+  color: #7195f4;
+}
+
+.sidebarLogout {
+  font-size: 18px;
+  margin-top: 750%;
+  /* margin-top: 100px; */
+}
+
+.sidebarLogout .logOut {
+  color: #fff;
+}
+
+.sidebarLogout .logOut:hover {
+  color: #7195f4;
+}

@@ -1,0 +1,71 @@
+.card-container {
+  background: #202028;
+  padding: 10px;
+  border-radius: 10px;
+  flex: 1.05;
+  margin-right: 20px;
+  text-align: left;
+  /* height: 400px; */
+  height: fit-content;
+  /* width: 90px; */
+  width: auto;
+  height: 110px;
+}
+
+.card-container:last-child {
+  margin-right: 0;
+}
+
+.icon {
+  /* border: 1px solid green; */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.card-title {
+  font-size: 13px;
+  /* margin-left: 10px; */
+}
+
+.card-value {
+  margin: 10px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.arrowCardChangeContainer {
+  display: flex;
+}
+
+.card-change {
+  font-size: 14px;
+  margin-top: 26px;
+
+  /* margin-bottom: 2px; */
+}
+
+.value-percent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+@media screen and (max-width:1080px) {
+  .card-container{
+    width: 90%;
+  }}
+
+@media screen and (max-width:780px) {
+    .card-container{
+      width: 90%;
+    }}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: 90%;
+  }
+}
